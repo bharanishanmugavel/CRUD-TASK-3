@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BREWERIES</title>
+    <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+     rel="stylesheet" 
+     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+     crossorigin="anonymous">
+     <link rel="shortcut icon" href="https://smartvocab.in/vocab-api/common-images/5ntoiaanjxoz9got.jpg?v=1" type="image/x-icon">
+
+     <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(lightblue,rgb(16, 173, 212));
+
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 30px;
+            overflow: hidden;
+            color: rgb(16, 18, 163);
+            font-weight: bolder;
+            
+        }
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: #f2f2f2;
+        }
+        .table-hover tbody tr:hover{
+            background-color: #ddd;
+        }  
+    </style>
+</head>
+<body>
+    <div class="container mt-3"> 
+        <h2>CRUD operation using HTML,CSS and JavaScript</h2>
+    
+        <div id="userForm" class="mb-3">
+        <input type="hidden" id="userId" value=""/>
+        </div>
+        
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>S.NO</th>
+                    <th>Name</th>
+                    <th >City</th>
+                    <th>Country</th>
+                    <th>State_province</th>
+                    <th>Website Url</th>
+                </tr>
+            </thead>
+            <tbody id="userList">
+                <!-- user row will be added here using dom manipulation -->
+                
+            </tbody>
+        </table>
+    </div>
+        <script src="./script.js"></script>
+
+    
+    
+</body>
+</html>
